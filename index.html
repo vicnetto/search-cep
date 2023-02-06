@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEP</title>
+    <style>
+        @font-face {
+            font-family: roboto-regular;
+            src: url(./font/RobotoCondensed-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: roboto-light;
+            src: url(./font/RobotoCondensed-Light.ttf);
+        }
+
+        body {
+            background: #44475a;
+
+            font-family: roboto-light;
+        }
+
+        input {
+            text-align: center;
+            font-family: roboto-regular;
+            font-size: 15px;
+
+            margin-bottom: 20px;
+        }
+        
+        button {
+            width: 100px;
+            height: 40px;
+            background-color: #ff79c6;
+            border-color: #bd93f9;
+            font-family: roboto-light;
+            font-size: 15px;
+
+            border-radius: 15px;
+        }
+
+        p {
+            font-size: 17px;
+            text-align: center;
+            font-family: roboto-regular
+        }
+
+        .divInput {
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .app {
+            height: 98vh;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .insertCep {
+            background-color: #bd93f9;
+            padding: 10px 40px 10px 40px;
+
+            border-radius: 15px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="app" class="app">
+        <form id="insertCep" class="insertCep">
+            <h1>Search CEP</h1>
+            
+            <div class="divInput">
+                <input id="cepInput" class="cepInput" placeholder="Insert the CEP">
+                <button>Search</button>
+                <p id="info"></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
